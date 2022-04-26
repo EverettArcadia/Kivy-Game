@@ -1,0 +1,883 @@
+#:kivy 2.0.0
+
+
+
+
+<MenuWidget>:
+    name: 'menu'
+    canvas.before:
+        Color:
+            rgba: 0, 0, 0, 1
+
+        Rectangle:
+
+            size: 667, 375
+            pos: -285, -140
+<GameOver>:
+    name: 'gameover'
+    canvas.before:
+        Color:
+            rgba: 0, 0, 0, 1
+        Rectangle:
+            size: 300, 300
+            pos: -100, -100
+<Screen_op>:
+    name: 'settings_01'
+    canvas.before:
+        Color:
+            rgba: 0, 0, 0, 1
+        Rectangle:
+            size: 300, 300
+            pos: -100, -100
+
+<Level2>:
+    name: 'Level2'
+    canvas:
+        Rectangle:
+            source: root.play_game()
+
+
+<Background>:
+    canvas:
+        Rectangle:
+            source: self.background_source
+            pos: self.pos
+            size: self.size
+
+<BackgroundTwo>:
+    canvas:
+        Rectangle:
+            source: self.background2_source
+            pos: self.pos
+            size: self.size
+
+<BackgroundThree>:
+    canvas:
+        Rectangle:
+            source: self.background3_source
+            pos: self.pos
+            size: self.size
+
+<Background4>:
+    canvas:
+        Rectangle:
+            source: 'Bg_3-13.png'
+            pos: self.pos
+            size: 110, 110
+<BlueCloudBack>:
+    canvas:
+        Rectangle:
+            source: 'Blue_Cloud-01.png'
+            pos: self.pos
+            size: [1400, 150]
+
+<BlackCloudBack>:
+    canvas:
+        Rectangle:
+            source: 'Black_Cloud-12.png'
+            pos: self.pos
+            size: self.size
+
+<BWCloudBack>:
+    canvas:
+        Rectangle:
+            source: 'BW_Cloud-13.png'
+            pos: self.pos
+            size: self.size
+
+<RedCloudBack>:
+    canvas:
+        Rectangle:
+            source: 'Red_Clouds-04.png'
+            pos: self.pos
+            size: [600, 150]
+<PurpleCloudBack>:
+    canvas:
+        Rectangle:
+            source: 'Purple_Cloud-03.png'
+            pos: self.pos
+            size: self.size
+<WhiteCloudBack>:
+    canvas:
+        Rectangle:
+            source: 'White_Cloud-14.png'
+            pos: self.pos
+            size: [700,150]
+
+<Depth>:
+    canvas:
+        Rectangle:
+            source: 'Levels-01.png'
+            pos: self.pos
+            size: [5000, 5000]
+<BlueCloudFront>:
+    canvas:
+        Rectangle:
+            source: 'Blue_Cloud-01.png'
+            pos: self.pos
+            size: [1400, 150]
+<BlackCloudFront>:
+    canvas:
+        Rectangle:
+            source: 'Black_Cloud-12.png'
+            pos: self.pos
+            size: self.size
+<BWCloudFront>:
+    canvas:
+        Rectangle:
+            source: 'BW_Cloud-13.png'
+            pos: self.pos
+            size: self.size
+<RedCloudFront>:
+    canvas:
+        Rectangle:
+            source: 'Red_Clouds-04.png'
+            pos: self.pos
+            size: [600,150]
+<PurpleCloudFront>:
+    canvas:
+        Rectangle:
+            source: 'Purple_Cloud-03.png'
+            pos: self.pos
+            size: self.size
+<WhiteCloudFront>:
+    canvas:
+        Rectangle:
+            source: 'White_Cloud-14.png'
+            pos: self.pos
+            size: [700,150]
+
+<Scrolling_one>:
+    canvas:
+        Rectangle:
+            source: 'moving_background-17-33.png'
+            pos: self.pos
+            size: 2000, 400
+
+<Hand_ov>:
+    size: [50, 50]
+    canvas:
+        Rectangle:
+            source: self.my_source
+            pos: self.pos
+            size: [100,100]
+<Hand_ov_two>:
+    size: [50, 50]
+    canvas:
+        Rectangle:
+            source: self.my_source
+            pos: self.pos
+            size: [100, 100]
+
+<OrbsPowerUP>:
+    size: [40,40]
+    canvas:
+        Rectangle:
+            source: self.my_source
+            pos: self.pos
+            size: [40,40]
+
+<Vatality_orbs>:
+    size: [50,50]
+    canvas:
+        Rectangle:
+            source: self.my_source
+            pos: self.pos
+            size: self.size
+<Curtain>:
+    name: 'blackout'
+    canvas.before:
+        Color:
+            rgba: 0, 0, 0, 1
+        Rectangle:
+            size: [1000, 1000]
+            pos: 0,0
+
+<Settings_button>:
+    size: [50,40]
+    canvas:
+        Rectangle:
+            source: 'Menu_Icon.png'
+            pos: self.pos
+            size: self.size
+
+
+<PlayerOne>:
+    size: [50,50]
+    canvas:
+        Rectangle:
+            source: self.my_source
+            pos: self.pos
+            size: [80,80]
+
+<Player1_Phantom>:
+    size: self.size
+    canvas:
+        Rectangle:
+            source: self.my_source
+            pos: self.pos
+            size: self.size
+
+<Phantom_Anim2>:
+    size: [50,50]
+    canvas:
+        Rectangle:
+            source: self.my_source
+            pos: self.pos
+            size: [80,80]
+
+<Vanishing_Flames>:
+    size: [50,50]
+    canvas:
+        Rectangle:
+            source: self.my_source
+            pos: self.pos
+            size: [80,120]
+
+<Flames_Ground>:
+    size: 500, 240
+    canvas:
+        Rectangle:
+            source: self.my_source
+            pos: self.pos
+            size: 700, 100
+
+<Scrolling_two>:
+    canvas:
+        Rectangle:
+            source: 'moving_shadow-17-17.png'
+            pos: self.pos
+            size: 4000, 400
+
+<Cloud_one>:
+    canvas:
+        Rectangle:
+            source: 'cloud-1-03.png'
+            pos: self.pos
+            size: 1000, 200
+
+<Roof>:
+    size: [50, 60]
+    canvas:
+        Rectangle:
+            source: 'walls-09.png'
+            pos: self.pos
+            size: self.size
+
+<Counter>:
+    name: 'count'
+    size: [80, 80]
+    canvas:
+        Rectangle:
+            source: 'Counter-19.png'
+            pos: self.pos
+            size: self.size
+
+
+<Enemy>:
+    size: 120, 120
+    canvas:
+        Rectangle:
+            pos: self.pos
+            source: self.new_source
+            size: 150, 375 / 2.5
+
+<Spikes>:
+    size: [50,25]
+    canvas:
+        Rectangle:
+            source: 'floor-01-20.png'
+
+            pos: self.pos
+            size: 0, 0
+
+<Ticker>:
+    size: 1,1
+    canvas:
+        Rectangle:
+            pos: self.pos
+            size: self.size
+
+<Title_Screen>:
+    size: 300, 80
+    canvas:
+        Rectangle:
+            source: 'Metal_Mask_Title.png'
+            pos: self.pos
+            size: 600, 150
+
+<First_fall>:
+    size: 150, 50
+    canvas:
+        Rectangle:
+            source: 'First_fall.png'
+            pos: self.pos
+            size: 150, 50
+
+
+
+<GameOn>:
+
+    background: bg_1
+    background: bg_2
+    background: bg_3
+    background: bg_4
+    background: bg_5
+    background: bg_6
+    background: bg_7
+    background: bg_8
+    background: bg_9
+    background: bg_10
+    background: bg_11
+    background: bg_12
+    background: bg_13
+    background: bg_14
+    background: bg_15
+    background: bg_16
+    background: bg_17
+    background: bg_18
+    bluecloudback: blue_cloud_b
+    bluecloudfront: blue_cloud_f
+    purplecloudback: purple_cloud_b
+    purplecloudfront: purple_cloud_f
+    redcloudback: red_cloud_b
+    redcloudfront: red_cloud_f
+    blackcloudback: black_cloud_b
+    blackcloudfront: black_cloud_f
+    bwcloudback: bw_cloud_b
+    bwcloudfront: bw_cloud_f
+    whitecloudback: white_cloud_b
+    whitecloudfront: white_cloud_f
+    depth: test_bg
+    scrolling_one: wall_guts
+    player1: player_1
+    player1_phantom: phantom_1
+    phantom_anim2: phantom_2
+    vanishing_flames: flames2
+    enemy: enemy_1
+    hand_ov: hand_ov_damned
+    hand_ov_two: second_hand
+    spikes: spikes_1
+    spikes: spikes_2
+    spikes: spikes_3
+    spikes: spikes_4
+    spikes: spikes_5
+    spikes: spikes_6
+    spikes: spikes_7
+    spikes: spikes_8
+    spikes: spikes_9
+    spikes: spikes_10
+    spikes: spikes_11
+    spikes: spikes_12
+    spikes: spikes_13
+    spikes: spikes_14
+    scrolling_two: shadows
+    cloud_one: cloud_1
+    vatality_orbs: orb_1
+    orbspowerup: power_up_01
+    flames_ground: flames_bottom
+    curtain: blackout
+    settings_button: icon_01
+
+    menu: menu_1
+    gameover: gameover_1
+    screen_op: settings_01
+    title_screen: main_title
+    first_fall: level_2
+
+
+
+
+
+    Ticker:
+        id: ticker
+        center_x: root.center_x * 4
+        y: root.y
+
+    Background:
+        id: bg_1
+        center_x: root.center_x
+        y: root.y
+
+    Background:
+        id: bg_2
+        center_x: root.center_x
+        y: root.y + self.height
+    Background:
+        id: bg_3
+        center_x: root.center_x
+        y: root.y + self.height * 2
+    Background:
+        id: bg_4
+        center_x: root.center_x
+        y: root.y + self.height * 3
+    Background:
+        id: bg_5
+        center_x: root.center_x
+        y: root.y + self.height * 4
+    Background:
+        id: bg_5
+        center_x: root.center_x
+        y: root.y + self.height * 5
+    BackgroundTwo:
+        id: bg_6
+        center_x: root.center_x - self.width
+        y: root.y
+    BackgroundTwo:
+        id: bg_7
+        center_x: root.center_x - self.width
+        y: root.y + self.height
+    BackgroundTwo:
+        id: bg_8
+        center_x: root.center_x - self.width
+        y: root.y + self.height * 2
+    BackgroundTwo:
+        id: bg_9
+        center_x: root.center_x - self.width
+        y: root.y + self.height * 3
+    BackgroundTwo:
+        id: bg_10
+        center_x: root.center_x - self.width
+        y: root.y + self.height * 4
+    BackgroundTwo:
+        id: bg_11
+        center_x: root.center_x - self.width
+        y: root.y + self.height * 5
+    BackgroundThree:
+        id: bg_12
+        center_x: root.center_x + self.width
+        y: root.y
+    BackgroundThree:
+        id: bg_13
+        center_x: root.center_x + self.width
+        y: root.y + self.height
+    BackgroundThree:
+        id: bg_14
+        center_x: root.center_x + self.width
+        y: root.y + self.height * 2
+    BackgroundThree:
+        id: bg_15
+        center_x: root.center_x + self.width
+        y: root.y + self.height * 3
+    BackgroundThree:
+        id: bg_16
+        center_x: root.center_x + self.width
+        y: root.y + self.height * 4
+    BackgroundThree:
+        id: bg_17
+        center_x: root.center_x + self.width
+        y: root.y + self.height * 5
+    Background4:
+        id: bg_18
+        center_x: root.center_x - bg_6.width * 2
+        y: root.y
+    Background4:
+        id: bg_19
+        center_x: root.center_x - bg_6.width * 2
+        y: root.y + self.height
+    Background4:
+        id: bg_20
+        center_x: root.center_x - bg_6.width * 2
+        y: root.y + self.height * 2
+    Background4:
+        id: bg_21
+        center_x: root.center_x - bg_6.width * 2
+        y: root.y + self.height * 3
+    Background4:
+        id: bg_22
+        center_x: root.center_x - bg_6.width * 2
+        y: root.y + self.height * 4
+    Background4:
+        id: bg_23
+        center_x: root.center_x - bg_6.width * 2
+        y: root.y + self.height * 5
+    Background4:
+        id: bg_24
+        center_x: root.center_x + bg_6.width * 2
+        y: root.y
+    Background4:
+        id: bg_25
+        center_x: root.center_x + bg_6.width * 2
+        y: root.y + self.height
+    Background4:
+        id: bg_26
+        center_x: root.center_x + bg_6.width * 2
+        y: root.y + self.height * 2
+    Background4:
+        id: bg_27
+        center_x: root.center_x + bg_6.width * 2
+        y: root.y + self.height * 3
+    Background4:
+        id: bg_28
+        center_x: root.center_x + bg_6.width * 2
+        y: root.y + self.height * 4
+    Background4:
+        id: bg_28
+        center_x: root.center_x + bg_6.width * 2
+        y: root.y + self.height * 5
+    Background4:
+        id: bg_29
+        center_x: root.center_x + bg_6.width * 3
+        y: root.y
+    Background4:
+        id: bg_29
+        center_x: root.center_x + bg_6.width * 3
+        y: root.y + self.height
+    Background4:
+        id: bg_30
+        center_x: root.center_x + bg_6.width * 3
+        y: root.y + self.height * 2
+    Background4:
+        id: bg_31
+        center_x: root.center_x + bg_6.width * 3
+        y: root.y + self.height * 3
+    Background4:
+        id: bg_32
+        center_x: root.center_x + bg_6.width * 3
+        y: root.y + self.height * 4
+    Background4:
+        id: bg_33
+        center_x: root.center_x + bg_6.width * 3
+        y: root.y + self.height * 5
+    Background4:
+        id: bg_34
+        center_x: root.center_x - bg_6.width * 3
+        y: root.y
+    Background4:
+        id: bg_34
+        center_x: root.center_x - bg_6.width * 3
+        y: root.y + self.height
+    Background4:
+        id: bg_34
+        center_x: root.center_x - bg_6.width * 3
+        y: root.y + self.height * 2
+    Background4:
+        id: bg_35
+        center_x: root.center_x - bg_6.width * 3
+        y: root.y + self.height * 3
+    Background4:
+        id: bg_36
+        center_x: root.center_x - bg_6.width * 3
+        y: root.y + self.height * 4
+    Background4:
+        id: bg_37
+        center_x: root.center_x - bg_6.width * 3
+        y: root.y + self.height * 5
+    BlueCloudBack:
+        id: blue_cloud_b
+        center_x: root.center_x * 4
+        center_y: root.center_y
+    BlackCloudBack:
+        id: black_cloud_b
+        center_x: root.center_x * 4
+        center_y: root.center_y
+    PurpleCloudBack:
+        id: purple_cloud_b
+        center_x: root.center_x * 4
+        center_y: root.center_y
+    RedCloudBack:
+        id: red_cloud_b
+        center_x: root.center_x * 4
+        center_y: root.center_y
+    BWCloudBack:
+        id: bw_cloud_b
+        center_x: root.center_x * 4
+        center_y: root.center_y
+    WhiteCloudBack:
+        id: white_cloud_b
+        center_x: root.center_x
+        center_y: root.center_y - root.center_y * 2
+    Depth:
+        id: test_bg
+        x: root.x
+        y: root.y - 4500
+    Scrolling_one:
+        id: wall_guts
+        x: root.x
+        center_y: root.center_y * 1.5
+    Cloud_one:
+        id: cloud_1
+        x: root.x
+        y: root.y
+    BlueCloudFront:
+        id: blue_cloud_f
+        center_x: root.center_x * 4
+        center_y: root.center_y
+    PurpleCloudFront:
+        id: purple_cloud_f
+        center_x: root.center_x * 4
+        center_y: root.center_y
+    RedCloudFront:
+        id: red_cloud_f
+        center_x: root.center_x * 4
+        center_y: root.center_y
+    BlackCloudFront:
+        id: black_cloud_f
+        center_x: root.center_x * 4
+        center_y: root.center_y
+    BWCloudFront:
+        id: bw_cloud_f
+        center_x: root.center_x * 4
+        center_y: root.center_y
+    WhiteCloudFront:
+        id: white_cloud_f
+        center_x: root.center_x * 5
+        center_y: root.center_y
+    Hand_ov:
+        id: hand_ov_damned
+        center_x: root.center_x * 3
+        center_y: root.center_y
+    Hand_ov_two:
+        id: second_hand
+        center_x: root.center_x * 3
+        center_y: root.center_y
+    OrbsPowerUP:
+        id: power_up_01
+        center_x: root.center_x * 1.9
+        center_y: root.center_y - root.center_y * 2
+    Settings_button:
+        id: icon_01
+        center_x: root.center_x - root.center_x / 1.15
+        center_y: root.center_y * 1.8
+        opacity: .5
+        Button:
+            center_x: root.center_x - root.center_x / 1.15
+            center_y: root.center_y * 1.8
+            size: [50,50]
+            opacity: 0
+            on_press: root.settings_button_pressed()
+    Enemy:
+        id: enemy_1
+        center_x: root.center_x * 1.5
+        y: root.y + spikes_1.height / 2
+
+    Vatality_orbs:
+        id: orb_1
+        center_x: root.center_x * 1.9
+        center_y: root.center_y * 1.8
+        Label:
+            id: score_tracker
+            text: str(root.score)
+            center_x: root.center_x * 1.75
+            center_y: root.center_y * 1.8
+            size_hint: .9, .9
+
+
+
+
+
+
+
+
+
+
+
+
+
+    Spikes:
+        id: spikes_1
+        x: root.x
+        y: root.y
+
+    Spikes:
+        id: spikes_2
+        x: root.x + spikes_1.width
+        y: root.y
+
+    Spikes:
+        id: spikes_3
+        x: root.x + spikes_1.width * 2
+        y: root.y
+
+    Spikes:
+        id: spikes_4
+        x: root.x + spikes_1.width * 3
+        y: root.y
+
+    Spikes:
+        id: spikes_5
+        x: root.x + spikes_1.width * 4
+        y: root.y
+
+    Spikes:
+        id: spikes_6
+        x: root.x + spikes_1.width * 5
+        y: root.y
+
+    Spikes:
+        id: spikes_7
+        x: root.x + spikes_1.width * 6
+        y: root.y
+
+    Spikes:
+        id: spikes_8
+        x: root.x + spikes_1.width * 7
+        y: root.y
+
+    Spikes:
+        id: spikes_9
+        x: root.x + spikes_1.width * 8
+        y: root.y
+
+    Spikes:
+        id: spikes_10
+        x: root.x + spikes_1.width * 9
+        y: root.y
+
+    Spikes:
+        id: spikes_11
+        x: root.x + spikes_1.width * 10
+        y: root.y
+
+    Spikes:
+        id: spikes_12
+        x: root.x + spikes_1.width * 11
+        y: root.y
+
+    Spikes:
+        id: spikes_13
+        x: root.x + spikes_1.width * 12
+        y: root.y
+
+    Spikes:
+        id: spikes_14
+        x: root.x + spikes_1.width * 13
+        y: root.y
+
+    Player1_Phantom:
+        id: phantom_1
+        x: root.player1.x
+        y: root.player1.y
+
+    PlayerOne:
+        id: player_1
+        center_x: root.center_x / 6
+        center_y: root.center_y
+
+    Phantom_Anim2:
+        id: phantom_2
+        x: root.player1.x
+        y: root.player1.y
+
+    Vanishing_Flames:
+        id: flames2
+        x: root.player1.x
+        y: root.player1.y
+
+    Flames_Ground:
+        id: flames_bottom
+        center_x: root.center_x / 1.4
+        center_y: root.center_y / 1.7
+
+
+
+
+
+    Scrolling_two:
+        id: shadows
+        x: root.x
+        y: root.y
+
+    Curtain:
+        id: blackout
+        center_x: root.center_x
+        center_y: root.center_y
+
+    MenuWidget:
+        id: menu_1
+        center_x: root.center_x
+        center_y: root.center_y
+
+        Label:
+            source: 'White_Cloud-14.png'
+            pos_hint: { 'center_x': .5, 'center_y': .9}
+            size_hint: .9, .4
+        Button:
+            text: 'PLAY'
+            pos_hint: { 'center_x': .5, 'center_y': .4}
+            size_hint: 1, .35
+            on_press: root.menu_start()
+        Button:
+            text: 'EXIT'
+            pos_hint: { 'center_x': .5, 'center_y': .1}
+            size_hint: 1, .35
+            on_press: quit()
+
+    GameOver:
+        id: gameover_1
+        center_x: root.center_x
+        center_y: root.center_y
+
+        Label:
+            text: 'GAME OVER'
+            pos_hint: { 'center_x': .5, 'y': 1.5}
+            size_hint: .9, .4
+        Label:
+            text: 'TIME BONUS'
+            pos_hint: { 'center_x': .5, 'y': 1.1}
+            size_hint: .9, .4
+        Label:
+            text: str(root.timer)
+            pos_hint: { 'center_x': .5, 'y': .90}
+            size_hint: .9, .4
+        Label:
+            text: ' '
+            pos_hint: { 'center_x': .5, 'y': .70}
+            size_hint: .9, .4
+        Label:
+            text: 'FINAL SCORE'
+            pos_hint: { 'center_x': .5, 'y': .25}
+            size_hint: .9, .4
+        Label:
+            text: str(root.score)
+            pos_hint: { 'center_x': .5, 'y': .05}
+            size_hint: .9, .4
+
+        Label:
+            text: 'Play Again?'
+            pos_hint: { 'center_x': .5, 'y': -.4}
+            size_hint: .9, .4
+        Button:
+            text: 'YES'
+            pos_hint: { 'center_x': .1, 'y': -.9}
+            size_hint: .7, .4
+            on_press: root.start_button_pressed()
+        Button:
+            text: 'NO'
+            pos_hint: { 'center_x': .9, 'y': -.9}
+            size_hint: .7, .4
+            on_press: root.return_menu()
+
+    Screen_op:
+        id: settings_01
+        center_x: root.center_x
+        center_y: root.center_y
+        Label:
+            text: 'SETTINGS'
+            pos_hint: { 'center_x': .5, 'y': .99}
+            size_hint: .9, .4
+        Button:
+            text: 'RESUME'
+            pos_hint: { 'center_x': -.1, 'y': .5}
+            size_hint: .9, .4
+            on_press: root.resume_button_pressed()
+        Button:
+            text: 'RESTART'
+            pos_hint: { 'center_x': 1.1, 'y': .5}
+            size_hint: .9, .4
+            on_press: root.restart_button_pressed()
+        Button:
+            text: 'EXIT'
+            pos_hint: { 'center_x': .5, 'y': -.1}
+            size_hint: 2.1, .4
+            on_press: root.return_menu()
+
+    Title_Screen:
+        id: main_title
+        center_x: root.center_x / 1.8
+        center_y: root.center_y * 1.1
+
+    First_fall:
+        id: level_2
+        center_x: root.center_x * 1.5
+        center_y: root.center_y / 1.5
