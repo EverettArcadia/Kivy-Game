@@ -1,2 +1,2 @@
 # Kivy-Game
-This is a game I created using kivy
+Basic game created with kivy library in Python
